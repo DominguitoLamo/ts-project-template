@@ -4,7 +4,8 @@
   "description": "ts-project-template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:comment": "启动jest, 进行单元测试",
+    "test": "jest",
     "dev:comment": "启动开发环境",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "eslint:comment": "使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .ts 的文件",
@@ -13,7 +14,6 @@
     "prettier": "prettier --write \"src/**/*.ts\"",
     "build:comment": "构建",
     "build": "npm run eslint && npm run prettier && rm -rf lib && tsc --build",
-    "jestest": "jest"
   },
   "keywords": [],
   "author": "",
